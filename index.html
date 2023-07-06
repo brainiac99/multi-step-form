@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Multi-step form</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-steps">
+          <li class="nav-step">
+            <div class="step-number active-number">1</div>
+            <div class="step-name">
+              <p class="number">Step 1</p>
+              <p class="name">your info</p>
+            </div>
+          </li>
+          <li class="nav-step">
+            <div class="step-number">2</div>
+            <div class="step-name">
+              <p class="number">Step 2</p>
+              <p class="name">select plan</p>
+            </div>
+          </li>
+          <li class="nav-step">
+            <div class="step-number">3</div>
+            <div class="step-name">
+              <p class="number">Step 3</p>
+              <p class="name">add-ons</p>
+            </div>
+          </li>
+          <li class="nav-step">
+            <div class="step-number">4</div>
+            <div class="step-name">
+              <p class="number">Step 4</p>
+              <p class="name">summary</p>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-container">
+        <main class="main">
+          <div class="grid-container">
+            <div class="main-steps">
+              <section class="info">
+                <h1 class="section-heading">Personal info</h1>
+                <p class="section-description">
+                  Please provide your name, email address, and phone number.
+                </p>
+                <form action="" class="form-info">
+                  <label for="input-name">Name</label>
+                  <input
+                    type="text"
+                    id="input-name"
+                    placeholder="e.g. Stephen King"
+                    required
+                  />
+                  <label for="input-email">Email Address</label>
+                  <input
+                    type="email"
+                    id="input-email"
+                    placeholder="e.g. stephenking@lorem.com"
+                    required
+                  />
+                  <label for="input-phone">Phone Number</label>
+                  <input
+                    type="number"
+                    id="input-phone"
+                    placeholder="e.g. +1 234 567 890"
+                    required
+                  />
+                </form>
+              </section>
+              <section class="plans">
+                <h1 class="section-heading">Select your plan</h1>
+                <p class="section-description">
+                  Select your plan You have the option of monthly or yearly
+                  billing.
+                </p>
+                <div class="plan-select">
+                  <div class="plan active-plan">
+                    <img src="./assets/images/icon-arcade.svg" alt="" />
+                    <div class="plan-text">
+                      <h2 class="plan-name">Arcade</h2>
+                      <p class="plan-price monthly">$9/mo</p>
+                      <p class="plan-price yearly hidden">$90/yr</p>
+                      <p class="free yearly hidden">2 months free</p>
+                    </div>
+                  </div>
+                  <div class="plan">
+                    <img src="./assets/images/icon-advanced.svg" alt="" />
+                    <div class="plan-text">
+                      <h2 class="plan-name">Advanced</h2>
+                      <p class="plan-price monthly">$12/mo</p>
+                      <p class="plan-price yearly hidden">$120/yr</p>
+                      <p class="free yearly hidden">2 months free</p>
+                    </div>
+                  </div>
+                  <div class="plan">
+                    <img src="./assets/images/icon-pro.svg" alt="" />
+                    <div class="plan-text">
+                      <h2 class="plan-name">Pro</h2>
+                      <p class="plan-price monthly">$15/mo</p>
+                      <p class="plan-price yearly hidden">$150/yr</p>
+                      <p class="free yearly hidden">2 months free</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="toggle">
+                  <p class="toggle-monthly activated">Monthly</p>
+                  <input type="checkbox" class="toggle-btn" />
+                  <p class="toggle-yearly">Yearly</p>
+                </div>
+              </section>
+              <section class="add-ons">
+                <h1 class="section-heading">Pick add-ons</h1>
+                <p class="section-description">
+                  Add-ons help enhance your gaming experience.
+                </p>
+                <div class="add-on-options">
+                  <div class="online">
+                    <input type="checkbox" class="check" />
+                    <div class="option">
+                      <h2 class="plan-name">Online service</h2>
+                      <p class="section-description">
+                        Access to multiplayer games
+                      </p>
+                    </div>
+                    <div class="option-price">
+                      <p class="monthly">+1/mo</p>
+                      <p class="yearly hidden">+10/yr</p>
+                    </div>
+                  </div>
+                  <div class="storage">
+                    <input type="checkbox" class="check" />
+                    <div class="option">
+                      <h2 class="plan-name">Larger storage</h2>
+                      <p class="section-description">Extra 1TB of cloud save</p>
+                    </div>
+                    <div class="option-price">
+                      <p class="monthly">+2/mo</p>
+                      <p class="yearly hidden">+20/yr</p>
+                    </div>
+                  </div>
+                  <div class="customize">
+                    <input type="checkbox" class="check" />
+                    <div class="option">
+                      <h2 class="plan-name">Customizable profile</h2>
+                      <p class="section-description">
+                        Custom theme on your profile
+                      </p>
+                    </div>
+                    <div class="option-price">
+                      <p class="monthly">+2/mo</p>
+                      <p class="yearly hidden">+20/yr</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="section-summary">
+                <h1 class="section-heading">Finishing up</h1>
+                <p class="section-description">
+                  Double-check everything looks OK before confirming.
+                </p>
+                <div class="summary-options">
+                  <div class="summary">
+                    <div class="selected-plan">
+                      <div>
+                        <p class="selected-plan-name"></p>
+                        <button class="change-plan">Change</button>
+                      </div>
+                      <div class="selected-plan-price"></div>
+                    </div>
+                    <div class="selected-options">
+                      <div class="hidden">
+                        <p class="selected-option-name">Online service</p>
+                        <div class="selected-option-price">
+                          <p class="monthly">+1/mo</p>
+                          <p class="yearly hidden">+10/yr</p>
+                        </div>
+                      </div>
+                      <div class="hidden">
+                        <p class="selected-option-name">Larger storage</p>
+                        <div class="selected-option-price">
+                          <p class="monthly">+2/mo</p>
+                          <p class="yearly hidden">+20/yr</p>
+                        </div>
+                      </div>
+                      <div class="hidden">
+                        <p class="selected-option-name">Customizable profile</p>
+                        <div class="selected-option-price">
+                          <p class="monthly">+2/mo</p>
+                          <p class="yearly hidden">+20/yr</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="total">
+                    <p class="monthly">Total (per month)</p>
+                    <p class="yearly hidden">Total (per year)</p>
+                    <p class="total-price">9</p>
+                  </div>
+                </div>
+              </section>
+              <section class="done">
+                <img src="./assets/images/icon-thank-you.svg" alt="" />
+                <h1 class="section-heading">Thank you!</h1>
+                <p class="section-description">
+                  Thanks for confirming your subscription! We hope you have fun
+                  using our platform. If you ever need support, please feel free
+                  to email us at support@loremgaming.com.
+                </p>
+              </section>
+            </div>
+          </div>
+        </main>
+        <section class="btn">
+          <button class="btn-back hidden">Go Back</button>
+          <button class="btn-next">Next Step</button>
+          <button class="btn-confirm hidden">Confirm</button>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
