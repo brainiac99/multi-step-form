@@ -404,6 +404,7 @@ input::-webkit-inner-spin-button {
 .btn {
   display: flex;
   margin: 4rem 7rem;
+  margin-top: auto;
 }
 
 button {
